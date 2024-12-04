@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAGINA DE LUCAS</title>
+
+    <!-- COLOR DEL FONDO -->
+    <style>
+        body {
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- DISEÑO DE LOS BLOQUES -->
+    <style>
+        body {
+            margin: 0;
+        }
+        .bloque1 {
+            background-color: lightblue;
+            width: 100%;
+            padding: 15px;
+            border-radius: 0px;
+            box-sizing: border-box;
+        }
+    </style>
+
+    <style>
+        body {
+            margin: 0;
+        }
+        .bloque2 {
+            background-color: rgb(233, 145, 63);
+            width: 100%;
+            padding: 15px;
+            border-radius: 0px;
+            box-sizing: border-box;
+        }
+    </style>
+
+    <!-- DISEÑO DE LA LISTA CON NUMEROS ROMANOS -->
+    <style>
+        ol {
+            list-style-type: upper-roman;
+        }
+    </style>
+
+    <!-- DISEÑO DE LAS IMAGENES-->
+    <style> 
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 150px;
+            height: 200px;
+        }
+    </style>
+
+    <!-- TITULO 1 -->
+    <div class="bloque1">
+        <h1 style="text-align: center;">BIENVENIDO A ESTA PÁGINA WEB</h1>
+    </div>
+    <!-- SUBTITULO 1 Y CUERPO -->
+    <h2 style="text-align: left;">¿De qué trata esta pagina web?</h2>
+    <p style="text-align: left;">  Este es un prototipo de una pagina web donde se va a aprender a crear paginas web. Entre ellos están: </p>
+
+    <!-- LISTA -->
+    <ol>
+        <li style="text-align: left;">Diseño de titulo.</li>
+        <li style="text-align: left;">Implementación de imagenes.</li>
+        <li style="text-align: left;">Colocar colores y aplicar un diseño a la pagina web.</li>
+    </ol>
+    
+    <!-- TITULO 2 -->
+    <div class="bloque1">
+        <h1 style="text-align: center">Diseño de un titulo</h1>
+    </div>
+    <!-- SUBTITULO 2 Y CUERPO -->
+    <div>
+        <h2 >¿Qué es lo que se necesita saber?</h2>
+        <p>  Para poder implementar un titulo y su diseño, es facil:<br>
+              Primero se tiene que iniciar con "h1" haciendo referencia a head 1 o cabeza 1 y terminar con "/h1"<br>
+              Para agregar diseños o ciertas especificaciones, por ejemplo, colocar el titulo o texto centrado a la página, se puede implementar:<br>
+        </p>
+        <h3 style="text-align: center;">style="text-aling: center"</h3>
+    </div> 
+
+    <!-- TITULO 3 -->
+    <div class="bloque1">
+        <h1 style="text-align: center">Implementación de imagenes</h1>
+    </div>
+    <!-- SUBTITULO 3 Y CUERPO -->
+    <div>
+        <h2 >¿Qué es lo que se necesita saber?</h2>
+        <p>  Para poder implementar una imagen y diseño:<br>
+              Primero hay que agregar la imagen al repositorio o al programa, en este caso, yo tengo un repositorio llamado "proyecto pagina web" y<br>
+              en ese repositorio tengo una carpeta llamada "imagenes", en siguiente, se tiene que implementar la codificación:<br>
+            <h3>
+              div class="bloque2"<br>
+              ....h1 style="text-align: center;" ESTA PÁGINA FUE CREADA POR: /h1<br>
+              ....img src="imagenes/imagen1.png" alt="Descripción de la imagen"<br>
+              /div<br>
+            </h3>
+              aplicando un diseño llamado bloque2 donde se centra la imagen y se hace pequeña aplicando un bloque con color de fondo naranjo:
+              <h3>
+                style<br>
+                ....img {<br>
+                ........display: block;<br>
+                ........margin: 0 auto;<br>
+                ........width: 150px;<br>
+                ........height: 200px;<br>
+                ....}<br>
+                /style<br>
+              </h3>
+        </p>
+        <div class="bloque2">
+            <h1 style="text-align: center;"> ESTA PÁGINA FUE CREADA POR: </h1>
+            <img src="imagenes/imagen1.png" alt="Descripción de la imagen">
+        </div>
+    </div> 
+    <div>
+        <h1>Bloque 2</h1>
+        <p>Este es otro bloque de texto.</p>
+    </div>
+
+    <div class="bloque">
+        <h1>Bloque Azul</h1>
+        <p>Este bloque tiene un fondo de color azul claro.</p>
+    </div>
+    <div class="bloque" style="background-color: lightcoral;">
+        <h1>Bloque Coral</h1>
+        <p>Este bloque tiene un fondo de color coral.</p>
+    </div>
+</body>
+</html>
