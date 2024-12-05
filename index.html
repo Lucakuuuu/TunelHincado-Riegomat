@@ -5,15 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PAGINA</title>
     <link rel="stylesheet" href="Estilos.css">
+    <script src="funciones.js"></script>
 </head>
-<body>
-
-    <nav style="text-align: center; padding: 10px; background-color: lightgray;">
-        <a href="index.html" style="margin: 0 10px;">Inicio</a>
-        <a href="pagina1.html" style="margin: 0 10px;">Página 1</a>
-        <a href="pagina2.html" style="margin: 0 10px;">Página 2</a>
-    </nav>    
-
+<body>   
     <!-- TITULO 1 -->
     <div class="bloque1">
         <h1 style="text-align: center;">BIENVENIDO A ESTA PÁGINA WEB</h1>
@@ -89,6 +83,11 @@
     </div>
 
     <!-- SUBTITULO 3 Y CUERPO -->
+    <nav style="text-align: center; padding: 10px; background-color: lightseagreen;">
+        <a href="index.html" style="margin: 0 10px;">Inicio</a>
+        <a href="pagina1.html" style="margin: 0 10px;">Página 1</a>
+        <a href="pagina2.html" style="margin: 0 10px;">Página 2</a>
+    </nav>
 
     <!-- TITULO 4 -->
     <div class="bloque1" style="text-align: center;">
@@ -98,15 +97,8 @@
     <!-- SUBTITULO 4 Y CUERPO -->
 
     <!-- Botón interactivo -->
-    <div style="text-align: center; margin: 20px;">
-        <button onclick="cambiarColor()">Cambiar Color del Fondo</button>
-    </div>
-
-    <script>
-        function cambiarColor() {
-            document.body.style.backgroundColor = "red";
-        }
-    </script>
-     
+    <div id="boton-container" style="text-align: center; margin: 20px;">
+        <button onclick="cambiarColor()">Modo oscuro</button>
+    </div>    
 </body>
 </html>
