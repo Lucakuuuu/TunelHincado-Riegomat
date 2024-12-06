@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>TunelHincado Riegomat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Styles.css">
 </head>
 <body>
+
     <!-- Navegación Sticky -->
     <nav>
         <div class="logo-container">
-            <img src="imagenes/icono1.jpg" alt="Logo">
-            <h1>TunelHincado Riegomat</h1>
+            <img src="imagenes/logo1.png" alt="Logo">
         </div>
         <div>
             <a href="#inicio">Inicio</a>
@@ -23,9 +24,9 @@
     </nav>
 
     <!-- Texto y Video -->
-    <div class="info-video-container" id="informacion">
+    <h2 style="text-align: center;" id="informacion">¿Quiénes somos?</h2>
+    <div class="info-video-container">
         <div class="info">
-            <h2>¿Quiénes somos?</h2>
             <p>
                 Somos una microempresa dedicada a las perforaciones horizontales con más de 10 años de experiencia 
                 en el rubro de tuneleras, pozos profundos y agotamiento de napas de agua.
@@ -46,8 +47,9 @@
             </video>
         </div>
     </div>
+    
 
-    <!-- Contenido principal -->
+    <!-- Contenido Principal -->
     <h1>Ofrecemos servicios como:</h1>
     <div class="main-container">
         <article>
@@ -69,9 +71,52 @@
         </article>
     </div>
 
-    <!-- Pie de página -->
-    <footer id="contacto">
-        <p>© 2024 TunelHincado Riegomat. Todos los derechos reservados.</p>
-    </footer>
+    <!-- Pie de Página -->
+    <div id="contacto"></div>
+    <footer>
+        <div class="footer-container">
+            <!-- Información -->
+            <div class="footer-section">
+                <img src="imagenes/logo1.png" alt="Logo" class="footer-logo">
+                <p>
+                    Si deseas más información, asesoría o cotizar alguno de nuestros servicios, 
+                    puedes contactarnos a través de los siguientes medios:
+                </p>
+            </div>
+    
+            <!-- Enlaces del sitio -->
+            <div class="footer-section">
+                <h3>Enlaces del Sitio</h3>
+                <ul>
+                    <li><a href="#informacion">Nosotros</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+    
+            <!-- Contacto -->
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <img src="imagenes/house1.png" alt="Icono dirección">
+                        <p>Parcelación los 17, Parcela 16, Colina.<br>Santiago.</p>
+                    </div>
+                    <div class="contact-info">
+                        <img src="imagenes/mail1.png" alt="Icono correo">
+                        <p>Contrajulio@hotmail.com</p>
+                    </div>
+                    <div class="contact-info">
+                        <img src="imagenes/cellphone1.png" alt="Icono celular">
+                        <p>+569 7860 8382</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center;">
+            <p>© 2024 TunelHincado Riegomat. Todos los derechos reservados.</p>
+        </div>
+    </footer>        
+
 </body>
 </html>
