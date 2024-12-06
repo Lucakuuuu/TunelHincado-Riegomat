@@ -4,8 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PAGINA 1</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .main-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        article {
+            flex: 1;
+            padding: 20px;
+            background-color: lightgray;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        article:nth-child(odd) {
+            background-color: lightblue;
+        }
+    </style>
 </head>
 <body>
-    <h1 style="text-align: center;">BIENVENIDO A LA PAGINA 1</h1>
+    <header>
+        <h1 style="text-align: center;">BIENVENIDO A LA PAGINA 1</h1>
+    </header>
+
+    <main class="main-container">
+        <article>
+            <h2>Artículo Izquierdo</h2>
+            <p>Este es el contenido del artículo que se muestra en el lado izquierdo.</p>
+        </article>
+        <article>
+            <h2>Artículo Derecho</h2>
+            <p>Este es el contenido del artículo que se muestra en el lado derecho.</p>
+        </article>
+    </main>
+
+    <footer>
+        <p style="text-align: center;">© 2024 - Mi Página Web</p>
+    </footer>
 </body>
 </html>
