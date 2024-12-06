@@ -1,0 +1,53 @@
+/* Estilos globales */
+body {
+    margin: 0;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilo de los bloques */
+.bloque1 {
+    background-color: lightblue;
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.bloque2 {
+    background-color: rgb(233, 145, 63);
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    color: white;
+}
+
+/* Estilo para listas */
+ol {
+    list-style-type: upper-roman;
+}
+
+/* Estilo para imágenes */
+img {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 200px;
+}
+
+.bloque1:hover {
+    background-color: lightgreen;
+}
+
+.bloque2:hover {
+    background-color: coral;
+}
+
+/* Estilo de los enlaces del menú */
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+nav a:hover {
+    color: blue;
+}
