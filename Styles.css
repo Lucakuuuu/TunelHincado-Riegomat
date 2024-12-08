@@ -7,6 +7,36 @@ body {
     color: #333;
 }
 
+/* Diseño del subtitulo del body */
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #005682;
+    margin-bottom: 0.5px;
+}
+
+.container {
+    text-align: center;
+}
+
+.btn {
+    background-color: #016ea5;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-bottom: 45px;
+
+}
+
+.btn:hover {
+    background-color: #003955;
+    transform: scale(1.05);
+}
+
 /* Barra de navegación */
 nav {
     position: sticky;
@@ -20,11 +50,13 @@ nav {
     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* tamaño del logo*/
 nav .logo-container img {
     height: 80px;
     width: auto;
 }
 
+/* diseño de las opciones del navegador*/
 nav a {
     color: black;
     text-decoration: none;
@@ -34,23 +66,9 @@ nav a {
     transition: color 0.3s ease-in-out;
 }
 
+/* animación del navegador*/
 nav a:hover {
-    color: #ffc107; /* Amarillo brillante */
-}
-
-/* Encabezados */
-h1 {
-    font-size: 3rem;
-    text-align: center;
-    color: #13425a;
-    margin: 40px 0;
-}
-
-h2 {
-    font-size: 2rem;
-    text-align: center;
-    color: #005682;
-    margin-bottom: 20px;
+    color: #ffc107;
 }
 
 /* Contenedor de texto y video */
@@ -60,7 +78,7 @@ h2 {
     padding: 20px;
     gap: 20px;
     text-align: left;
-    align-items: center; /* Asegura que el texto y el video estén alineados verticalmente */
+    align-items: center;
 }
 
 /* Estilo para el texto */
@@ -68,10 +86,10 @@ h2 {
     flex: 1;
     font-size: 18px;
     line-height: 1.6;
-    color: black; /* Gris oscuro */
+    color: black;
 }
 
-/* Estilo para el video */
+/* Estilo para el espacio del video */
 .video-container {
     flex: 1;
     display: flex;
@@ -79,9 +97,10 @@ h2 {
     align-items: center;
 }
 
+/* Diseño del video */
 .video-container video {
     width: 100%;
-    max-width: 500px; /* Limita el tamaño máximo */
+    max-width: 500px;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -97,7 +116,7 @@ h2 {
     gap: 20px;
 }
 
-/* Artículos */
+/* Diseño para los artículos */
 article {
     flex: 1;
     background-color: white;
@@ -107,11 +126,13 @@ article {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* animación de los articulos */
 article:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+/* diseño de las imagenes en los articulos */
 article img {
     display: block;
     margin: 20px auto;
@@ -120,8 +141,14 @@ article img {
     border-radius: 8px;
 }
 
+/* diseño del subtitulo en los articulos */
 article h2 {
     color: #005682;
+    text-align: center;
+}
+
+/* diseño del cuerpo en los articulos */
+article p {
     text-align: center;
 }
 
@@ -134,6 +161,7 @@ footer {
     text-align: center;
 }
 
+/* contenedores del footer */
 .footer-container {
     display: flex;
     flex-wrap: wrap;
@@ -141,27 +169,40 @@ footer {
     justify-content: space-between;
 }
 
+/* Logo en el footer */
+.footer-logo {
+    display: block;
+    margin: 45px auto 20px;
+    width: 400px;
+    height: auto;
+}
+
+/* diseño de cada sección (Indicaciones, contactos y enlaces) */
 .footer-section {
     flex: 1;
     min-width: 250px;
 }
 
+/* diseño de los encabezados en cada sección */
 .footer-section h3 {
     font-size: 20px;
     margin-bottom: 10px;
     text-align: center;
 }
 
+/* diseños de la lista desordenada en enlaces */
 .footer-section ul {
     list-style: none;
     padding: 0;
 }
 
+/* diseño del link en las listas */
 .footer-section ul li a {
     text-decoration: none;
     color: #ddd;
 }
 
+/* animación del link en las listas */
 .footer-section ul li a:hover {
     color: #fff;
 }
@@ -181,18 +222,10 @@ footer {
     gap: 10px;
 }
 
+/* Diseño y tamaño de la imagen de contactos */
 .contact-info img {
     width: 40px;
     height: 40px;
-}
-
-/* Imagen de ubicación */
-.contact-image img {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 8px;
-    margin-top: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Derechos reservados */
@@ -202,10 +235,77 @@ footer div[style="text-align: center;"] {
     color: #aaa;
 }
 
-/* Logo en el footer */
-.footer-logo {
+.quotation-section {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
     display: block;
-    margin: 0 auto 15px;
-    width: 400px;
-    height: auto;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: none;
+}
+
+.info-contact-section{
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.info-contact-section h2{
+    margin-bottom: 10px;
+}
+
+.info-contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.info-contact-items{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.info-contact-items img{
+    width: 40px;
+    height: 40px;
+}
+
+.info-contact-items p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
 }
