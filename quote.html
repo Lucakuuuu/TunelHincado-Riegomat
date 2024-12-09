@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>TunelHincado Riegomat Cotización</title>
     <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> -->
-    <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="desings/web.css">
+    <link rel="stylesheet" href="desings/quote.css">
+    <link rel="stylesheet" href="desings/footer.css">
+    <link rel="stylesheet" href="desings/navBar.css">
 </head>
 <body>
     <!-- Navegación Sticky -->
@@ -22,28 +25,27 @@
     </nav>
     
     <!-- Formulario para cotización -->
-    <section class="quotation-section">
-        <h2>Solicitar Cotización</h2>
-        <form action="mailto:contrajulio@hotmail.com" method="post" enctype="text/plain">
-            <div class="form-group">
-                <label for="name">Nombre Completo:</label>
-                <input type="text" id="name" name="name" placeholder="Ingresa tu nombre" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" placeholder="Ingresa tu correo" required>
-            </div>
-            <div class="form-group">
-                <label for="phone">Número de Teléfono:</label>
-                <input type="tel" id="phone" name="phone" placeholder="Ingresa tu teléfono" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Mensaje:</label>
-                <textarea id="message" name="message" placeholder="Describe tu solicitud o servicio requerido" rows="5" required></textarea>
-            </div>
-            <button type="submit" class="btn">Enviar Cotización</button>
-        </form>
-    </section>
+    <form id="quotation-form" class="quotation-section">
+        <div class="form-group">
+            <label for="name">Nombre Completo:</label>
+            <input type="text" id="name" name="user_name" placeholder="Ingresa tu nombre" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="user_email" placeholder="Ingresa tu correo" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Número de Teléfono:</label>
+            <input type="tel" id="phone" name="user_phone" placeholder="Ingresa tu teléfono" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="user_message" placeholder="Describe tu solicitud o servicio requerido" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn">Enviar Cotización</button>
+    </form>
+    <div id="form-response" style="display: none; margin-top: 20px;"></div>
+    
 
     <!-- Información de contacto -->
     <section class="info-contact-section">
@@ -59,7 +61,7 @@
             </div>
             <div class="info-contact-items">
                 <img src="imagenes/cellphone2.png" alt="Icono celular">
-                <p>+569 7860 8382</p>
+                <p><a href="tel:+56978608382">+569 7860 8382</a></p>
             </div>
         </section>
     </section>
@@ -86,11 +88,11 @@
                     </div>
                     <div class="contact-info">
                         <img src="imagenes/mail1.png" alt="Icono correo">
-                        <p>Contrajulio@hotmail.com</p>
+                        <p><a href="tel:+56978608382">Contrajulio@hotmail.com</p>
                     </div>
                     <div class="contact-info">
                         <img src="imagenes/cellphone1.png" alt="Icono celular">
-                        <p>+569 7860 8382</p>
+                        <p><a href="tel:+56978608382">+569 7860 8382</a></p>
                     </div>
                 </div>
             </div>
@@ -109,5 +111,33 @@
             <p>© 2024 TunelHincado Riegomat. Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("bLhXh1fRagZsjfYXM");
+        })();
+
+        document.getElementById("quotation-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const serviceID = "service_uqhxr9c"; // Reemplaza con tu Service ID
+            const templateID = "template_vnbzgrp"; // Reemplaza con tu Template ID
+
+            emailjs.sendForm(serviceID, templateID, this)
+                .then(() => {
+                    const responseDiv = document.getElementById("form-response");
+                    responseDiv.style.display = "block";
+                    responseDiv.style.color = "green";
+                    responseDiv.innerText = "¡Correo enviado con éxito!";
+                    this.reset(); // Reinicia el formulario
+                }, (error) => {
+                    const responseDiv = document.getElementById("form-response");
+                    responseDiv.style.display = "block";
+                    responseDiv.style.color = "red";
+                    responseDiv.innerText = `Error al enviar el correo: ${error.text}`;
+                });
+        });
+    </script>
 </body>
 </html>

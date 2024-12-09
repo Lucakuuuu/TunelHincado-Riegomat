@@ -1,0 +1,91 @@
+/* Estilo general del pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* contenedores del footer */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+/* Logo en el footer */
+.footer-logo {
+    display: block;
+    margin: 45px auto 20px;
+    width: 400px;
+    height: auto;
+}
+
+/* diseño de cada sección (Indicaciones, contactos y enlaces) */
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+/* diseño de los encabezados en cada sección */
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* diseños de la lista desordenada en enlaces */
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* diseño del link en las listas */
+.footer-section ul li a {
+    text-decoration: none;
+    color: #ddd;
+}
+
+/* animación del link en las listas */
+.footer-section ul li a:hover {
+    color: #fff;
+}
+
+/* Contacto horizontal */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-info a{
+    color: #fff;
+    text-decoration: none;  
+}
+
+.contact-info a:hover{
+    color: #005682;
+    text-decoration: underline;  
+}
+
+/* Diseño y tamaño de la imagen de contactos */
+.contact-info img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Derechos reservados */
+footer div[style="text-align: center;"] {
+    margin-top: 20px;
+    font-size: 13px;
+    color: #aaa;
+}

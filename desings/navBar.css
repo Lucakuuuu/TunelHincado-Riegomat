@@ -1,0 +1,33 @@
+/* Barra de navegación */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 30px;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* tamaño del logo*/
+nav .logo-container img {
+    height: 70px;
+    width: auto;
+}
+
+/* diseño de las opciones del navegador*/
+nav a {
+    color: black;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+/* animación del navegador*/
+nav a:hover {
+    color: #ffc107;
+}
