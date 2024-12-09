@@ -4,7 +4,6 @@ footer {
     color: #fff;
     padding: 20px;
     font-size: 16px;
-    text-align: center;
 }
 
 /* contenedores del footer */
@@ -26,6 +25,9 @@ footer {
 /* diseño de cada sección (Indicaciones, contactos y enlaces) */
 .footer-section {
     flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
     min-width: 250px;
 }
 
@@ -36,10 +38,15 @@ footer {
     text-align: center;
 }
 
+.centerText {
+    text-align: center;
+}
+
 /* diseños de la lista desordenada en enlaces */
 .footer-section ul {
     list-style: none;
     padding: 0;
+    text-align: center;
 }
 
 /* diseño del link en las listas */
@@ -56,31 +63,38 @@ footer {
 /* Contacto horizontal */
 .contact-container {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 7px;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .contact-info {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
+    margin: 10px;
 }
 
-.contact-info a{
+.contact-info p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.4;
     color: #fff;
-    text-decoration: none;  
 }
 
-.contact-info a:hover{
+.contact-info a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
     color: #005682;
-    text-decoration: underline;  
 }
 
 /* Diseño y tamaño de la imagen de contactos */
 .contact-info img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
 }
 
 /* Derechos reservados */
