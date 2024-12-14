@@ -7,51 +7,84 @@
     <title>TunelHincado Riegomat</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="desings/web.css">
+    <link rel="stylesheet" href="desings/index.css">
     <link rel="stylesheet" href="desings/navBar.css">
     <link rel="stylesheet" href="desings/footer.css">
 </head>
 <body>
-    <meta name="google-site-verification" content="dGH67JHBkS_wuo1E9BA52mUCKMk_HuFvVKik73O_TUA" />
     <!-- Navegación Sticky -->
     <nav>
         <div class="logo-container">
             <a href="index.html"><img src="imagenes/logo2.png" alt="Logo"></a>
         </div>
         <div>
-            <a href="index.html">Información</a>
+            <a href="index.html">Inicio</a>
+            <a href="Information.html">Información</a>
             <a href="service.html">Servicios</a>
             <a href="quote.html">Contacto</a>
         </div>
     </nav>
 
-    <!-- Texto y Video -->
-    <h2 style="text-align: center;">¿Quiénes somos?</h2>
-    <div class="info-video-container">
-        <div class="info">
-            <p>
-                Somos una empresa dedicada a las perforaciones horizontales con más de 10 años de experiencia 
-                en el rubro de tuneleras, pozos profundos y agotamiento de napas de agua.
-            </p>
-            <p>
-                Nuestro objetivo principal es apoyar a empresas constructoras en la solución de desafíos relacionados 
-                con la instalación de ductos bajo calles, carreteras, líneas férreas, entre otros.
-            </p>
-            <p>
-                Nuestra experiencia es avalada por destacadas empresas constructoras como Excom, Ageovial, Cosal, 
-                Constructora Moreno, Manquewe, entre otras.
-            </p>
-        </div>
-        <div class="video-container">
-            <video controls>
-                <source src="imagenes/Video 2024-12-06 a las 15.39.45_12d6ccb8.mp4" type="video/mp4">
-                Tu navegador no soporta la reproducción de videos.
-            </video>
-        </div>
-    </div>
-    
+    <!-- Primera vista (Presentación) -->
+    <section class="hero">
+        <video autoplay muted loop>
+            <source src="imagenes/video-presentacion.mp4" type="video/mp4">
+            Tu navegador no soporta el video.
+        </video>
+
+        <div class="hero-content">
+            <h1>Bienvenidos a TunelHincado Riegomat</h1>
+            <p>Ofrecemos soluciones innovadoras para desafíos relacionados en construcciones</p>
+            <button class="hero-btn" onclick="window.location.href='information.html'">Descubra más sobre nosotros</button>
+        </div>        
+    </section>
 
     <!-- Contenido Principal -->
-    <h2>Ofrecemos servicios como:</h2>
+    <div class="ranked-container">
+        <h1>¿Cuales son los valores que nos identifican?</h1>
+        <div class="values-container">
+            <div class="value-item">
+                <img src="imagenes/1688472b876cc4f60d077f51239f0f10.png" alt="Calidad">
+                <h3>Calidad</h3>
+                <p>Trabajamos con materiales primas de primera calidad.</p>
+            </div>
+            <div class="value-item">
+                <img src="imagenes/1e86fbcf48f0d887090a598474fb114e.png" alt="Innovación">
+                <h3>Innovación</h3>
+                <p>Innovación en el diseño y soluciones de productos.</p>
+            </div>
+            <div class="value-item">
+                <img src="imagenes/2d6c2251273787a53b1cdc921ede294f.png" alt="Experiencia">
+                <h3>Experiencia</h3>
+                <p>Años de trayectoria en proyectos de ingeniería.</p>
+            </div>
+            <div class="value-item">
+                <img src="imagenes/bbf02d48f700f9861864c4b6db2be262.png" alt="Precios">
+                <h3>Precios</h3>
+                <p>Altamente competitivos en relación al mercado.</p>
+            </div>
+            <div class="value-item">
+                <img src="imagenes/bd70da6cb4bc66eeeb21337b6a341700.png" alt="Confianza">
+                <h3>Confianza</h3>
+                <p>Basamos nuestras relaciones en la confianza.</p>
+            </div>
+            <div class="value-item">
+                <img src="imagenes/c19a80960a71ce2adf90f9e385299656.png" alt="Flexibilidad">
+                <h3>Flexibilidad</h3>
+                <p>Nos adaptamos a la necesidad de cada proyecto.</p>
+            </div>
+            <!--
+            <div class="value-item">
+                <img src="imagenes/agilidad.png" alt="Agilidad">
+                <h3>Agilidad</h3>
+                <p>Trabajamos de manera ágil y eficiente.</p>
+            </div>
+            -->
+        </div>
+    </div>
+
+    <!-- Contenido Principal -->
+    <h1>Ofrecemos servicios como:</h1>
     <div class="main-container">
         <article>
             <h2>Perforaciones horizontales</h2>
@@ -66,14 +99,14 @@
         </article>
 
         <article>
-            <h2>Instalación de ductos</h2>
-            <img src="imagenes/ed2bbf_ddc81634c0ef477496f7538f43ac3f5b~mv2_d_3264_2448_s_4_2.png" alt="Instalación de ductos">
-            <p>Instalamos ductos de diversos materiales: HDPE, PVC, fierro, entre otros.</p>
+            <h2>Contrucción de pozos profundos</h2>
+            <img src="imagenes/Imagen de 2024-12-13 a las 12.52.14_a82cc334.jpg" alt="Pozos profundos">
+            <p>Realizamos construcciones de pozos profundos hasta 30 metros en diámetros de 6 y 8 pulgadas.</p>
         </article>
     </div>
 
     <div class="container">
-        <button class="btn" onclick="window.location.href='service.html'">Ver más</button>
+        <button class="btn" onclick="window.location.href='service.html'">Descubra todos los servicios que le ofrecemos</button>
     </div>
 
     <!-- Pie de Página -->
@@ -113,7 +146,8 @@
             <div class="footer-section">
                 <h3>Enlaces del Sitio</h3>
                 <ul>
-                    <li><a href="index.html">Nosotros</a></li>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="Information.html">Nosotros</a></li>
                     <li><a href="service.html">Servicios</a></li>
                     <li><a href="quote.html">Contacto</a></li>
                 </ul>

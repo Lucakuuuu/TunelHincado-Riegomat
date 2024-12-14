@@ -8,8 +8,15 @@ body {
 }
 
 /* Diseño del subtitulo del body */
-h2 {
+h1 {
     font-size: 2rem;
+    text-align: center;
+    color: #005682;
+    margin-bottom: 0.5px;
+}
+
+h2 {
+    font-size: 1.5rem;
     text-align: center;
     color: #005682;
     margin-bottom: 0.5px;
@@ -28,48 +35,12 @@ h2 {
     cursor: pointer;
     border-radius: 10px;
     transition: background-color 0.3s ease, transform 0.2s ease;
-    margin-bottom: 45px;
-    
+    margin-bottom: 45px; 
 }
 
 .btn:hover {
     background-color: #003955;
     transform: scale(1.05);
-}
-
-/* Contenedor de texto y video */
-.info-video-container {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    gap: 20px;
-    text-align: left;
-    align-items: center;
-}
-
-/* Estilo para el texto */
-.info {
-    flex: 1;
-    font-size: 18px;
-    line-height: 1.6;
-    color: black;
-}
-
-/* Estilo para el espacio del video */
-.video-container {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Diseño del video */
-.video-container video {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -83,7 +54,7 @@ h2 {
 }
 
 /* Diseño para los artículos */
-article {
+.main-container article {
     flex: 1;
     background-color: white;
     padding: 10px;
@@ -93,29 +64,28 @@ article {
 }
 
 /* animación de los articulos */
-article:hover {
+.main-container article:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* diseño de las imagenes en los articulos */
-article img {
+.main-container article img {
     display: block;
     margin: 20px auto;
     height: 280px;
     width: 100%;
-    /*max-width: 280px;*/
     object-fit: cover;
     border-radius: 8px;
 }
 
 /* diseño del subtitulo en los articulos */
-article h2 {
+.main-container article h2 {
     color: #005682;
     text-align: center;
 }
 
 /* diseño del cuerpo en los articulos */
-article p {
+.main-container article p {
     text-align: center;
 }
