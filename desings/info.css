@@ -67,3 +67,44 @@
     font-size: 0.9rem;
     color: #333;
 }
+
+/* Contenedor para las secciones alternadas */
+.alternating-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 20px;
+    background-color: #f4f4f4; /* Color de fondo general */
+    margin-bottom: 20px;
+}
+
+.alternating-section:nth-child(even) {
+    flex-direction: row-reverse; /* Invertir el orden para secciones pares */
+}
+
+/* Estilo para la información (cuadrado oscuro) */
+.alternating-section .info-box {
+    flex: 1;
+    background-color: #333; /* Color oscuro */
+    color: #fff; /* Texto claro */
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo para las imágenes */
+.alternating-section .image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alternating-section .image-container img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
