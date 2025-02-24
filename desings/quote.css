@@ -2,9 +2,21 @@
     max-width: 800px;
     margin: 20px auto;
     background: #fff;
-    padding: 20px;
+    padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.quotation-section h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: black;
+    margin-bottom: 25px;
+}
+.quotation-section p {
+    font-size: 15px;
+    text-align: center;
+    color: black;
+    margin-bottom: 25px;
 }
 
 .form-group {
@@ -15,20 +27,24 @@ label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
+    font-family: 'Roboto', sans-serif;
 }
 
 input, textarea {
     width: 100%;
     padding: 10px;
-    font-size: 16px;
+    font-size: 17px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
 }
 
 textarea {
     resize: none;
+    font-family: 'Roboto', sans-serif;
 }
 
+/*
 .info-contact-section{
     max-width: 800px;
     margin: 20px auto;
@@ -81,3 +97,4 @@ textarea {
     font-size: 16px;
     color: #333;
 }
+*/

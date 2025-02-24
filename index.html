@@ -21,13 +21,13 @@
     <!-- Navegación Sticky -->
     <nav>
         <div class="logo-container">
-            <a href="index.html"><img src="imagenes/logo2.png" alt="Logo"></a>
+            <a href="index.html"><img src="imagenes/logo3.jpg" alt="Logo"></a>
         </div>
         <div>
             <a href="index.html">Inicio</a>
             <a href="Information.html">Nosotros</a>
             <a href="service.html">Servicios</a>
-            <a><button class="quote-btn" onclick="window.location.href='quote.html'">Nosotros</button></a>
+            <a><button class="quote-btn" onclick="window.location.href='quote.html'">Contactanos</button></a>
         </div>
     </nav>
 
@@ -39,8 +39,8 @@
         </video>
 
         <div class="hero-content">
-            <h1>Bienvenidos a TunelHincado Riegomat</h1>
-            <p>Ofrecemos soluciones innovadoras para desafíos relacionados en construcciones</p>
+            <h1>Bienvenidos a Riegomat</h1>
+            <p>Ofrecemos soluciones innovadoras para desafíos relacionados a construcciones</p>
             <button class="hero-btn" onclick="window.location.href='information.html'">Descubra más sobre nosotros</button>
         </div>        
     </section>
@@ -52,17 +52,17 @@
             <div class="value-item">
                 <img src="imagenes/1688472b876cc4f60d077f51239f0f10.png" alt="Calidad">
                 <h3>Calidad</h3>
-                <p>Trabajamos con materiales primas de primera calidad.</p>
+                <p>Trabajamos con productos de primera calidad.</p>
             </div>
             <div class="value-item">
                 <img src="imagenes/1e86fbcf48f0d887090a598474fb114e.png" alt="Innovación">
                 <h3>Innovación</h3>
-                <p>Innovación en el diseño y soluciones de productos.</p>
+                <p>Innovación en el diseño y solución de productos.</p>
             </div>
             <div class="value-item">
                 <img src="imagenes/2d6c2251273787a53b1cdc921ede294f.png" alt="Experiencia">
                 <h3>Experiencia</h3>
-                <p>Años de trayectoria en proyectos de ingeniería.</p>
+                <p>20 años de trayectoria en proyectos de ingeniería.</p>
             </div>
             <div class="value-item">
                 <img src="imagenes/bbf02d48f700f9861864c4b6db2be262.png" alt="Precios">
@@ -126,7 +126,7 @@
                 <div class="contact-container">
                     <div class="contact-info">
                         <img src="imagenes/house1.png" alt="Icono dirección">
-                        <p>Parcelación los 17, Parcela 16, Colina.<br>Santiago.</p>
+                        <p>Parcelación los 17, Parcela 16, Colina.<br>Región Metropolitana.</p>
                     </div>
                     <div class="contact-info">
                         <img src="imagenes/mail1.png" alt="Icono correo">
@@ -169,6 +169,20 @@
                 }
             });
         });
-        </script>
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        const quoteBtn = document.querySelector('.quote-btn');
+        
+        quoteBtn.addEventListener('click', function() {
+            // Si deseas que solo este botón se active (en caso de tener varios, remueve active de los demás)
+            // document.querySelectorAll('.quote-btn').forEach(btn => btn.classList.remove('active'));
+            
+            // Agrega la clase active para mantener el color azul
+            quoteBtn.classList.add('active');
+        });
+        });
+  </script>  
 </body>
 </html>

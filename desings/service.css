@@ -1,0 +1,59 @@
+/* Contenedor general de las tarjetas */
+.publication-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;           /* Espacio entre tarjetas */
+    padding: 20px;       /* Espacio interno del contenedor */
+  }
+  
+  /* Estilos de la tarjeta */
+  .publication-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Efecto hover en la tarjeta */
+  .publication-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Contenido interno de la tarjeta */
+  .card-content {
+    padding: 15px;
+  }
+  
+  /* Título del servicio */
+  .card-content h2 {
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    color: #005682;
+  }
+  
+  /* Cuerpo de la tarjeta: imagen y descripción en fila */
+  .card-body {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  /* Imagen a la izquierda */
+  .card-body img {
+    width: 30%;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  /* Descripción a la derecha */
+  .card-body p {
+    /*flex: 1;*/
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+  }
+  

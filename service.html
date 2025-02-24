@@ -9,62 +9,75 @@
     <link rel="stylesheet" href="desings/web.css">
     <link rel="stylesheet" href="desings/navBar.css">
     <link rel="stylesheet" href="desings/footer.css">
+    <link rel="stylesheet" href="desings/service.css">
 </head>
 <body>
     <!-- Navegación Sticky -->
     <nav>
         <div class="logo-container">
-            <a href="index.html"><img src="imagenes/logo2.png" alt="Logo"></a>
+            <a href="index.html"><img src="imagenes/logo3.jpg" alt="Logo"></a>
         </div>
         <div>
             <a href="index.html">Inicio</a>
             <a href="Information.html">Nosotros</a>
             <a href="service.html">Servicios</a>
-            <a href="quote.html">Contacto</a>
+            <a><button class="quote-btn" onclick="window.location.href='quote.html'">Contactanos</button></a>
         </div>
     </nav>
 
     <!-- Contenido Principal -->
-    <h1>Los servicios son:</h1>
-    <div class="main-container">
-        <article>
+    <h1 margin-bottom: 25px;>Los servicios que ofrecemos son:</h1>
+    <div class="publication-container">
+        <article class="publication-card">
+          <div class="card-content">
             <h2>Perforaciones horizontales</h2>
-            <img src="imagenes/Imagen 2024-12-06 a las 16.08.11_4ba727ea.jpg" alt="Perforaciones horizontales">
-            <p>Realizamos perforaciones de hasta 30 metros de largo en diversos diámetros.</p>
+            <div class="card-body">
+              <img src="imagenes/Imagen 2024-12-06 a las 16.08.11_4ba727ea.jpg" alt="Perforaciones horizontales">
+              <p>Realizamos perforaciones de hasta 30 metros de largo en diversos diámetros.</p>
+            </div>
+          </div>
         </article>
-
-        <article>
+      
+        <article class="publication-card">
+          <div class="card-content">
             <h2>Hincado de tuberías</h2>
-            <img src="imagenes/Imagen de 2024-12-12 a las 09.41.26_0bb49b541.png" alt="Hincado de tuberías">
-            <p>Instalamos tuberías de fierro con diámetros de hasta 24 pulgadas.</p>
+            <div class="card-body">
+              <img src="imagenes/Imagen de 2024-12-12 a las 09.41.26_0bb49b541.png" alt="Hincado de tuberías">
+              <p>Instalamos tuberías de fierro con diámetros de hasta 24 pulgadas.</p>
+            </div>
+          </div>
         </article>
-
-        <article>
+      
+        <article class="publication-card">
+          <div class="card-content">
             <h2>Instalación de ductos</h2>
-            <img src="imagenes/ed2bbf_ddc81634c0ef477496f7538f43ac3f5b~mv2_d_3264_2448_s_4_2.png" alt="Instalación de ductos">
-            <p>Instalamos ductos de diversos materiales: HDPE, PVC, fierro, entre otros.</p>
+            <div class="card-body">
+              <img src="imagenes/ed2bbf_ddc81634c0ef477496f7538f43ac3f5b~mv2_d_3264_2448_s_4_2.png" alt="Instalación de ductos">
+              <p>Instalamos ductos de diversos materiales: HDPE, PVC, fierro, entre otros.</p>
+            </div>
+          </div>
         </article>
-    </div>
-
-    <div class="main-container">
-        <article>
-            <h2>Contrucción de pozos profundos</h2>
-            <img src="imagenes/Imagen de 2024-12-13 a las 12.52.14_a82cc334.jpg" alt="Pozos profundos">
-            <p>Realizamos construcciones de pozos profundos hasta 30 metros en diámetros de 6 y 8 pulgadas.</p>
-        </article>
-
-        <article>
+      
+        <article class="publication-card">
+          <div class="card-content">
             <h2>Agotamientos de Napas de Agua</h2>
-            <img src="imagenes/Imagen de 2024-12-13 a las 13.28.45_eb03178c.jpg" alt="Agotamientos de Napas de Agua">
-            <p>Realizamos agotamientos de aguas subterráneas con punteras y pozos, mientras se construye o se instalan ductos en sectores con napas de agua.</p>
+            <div class="card-body">
+              <img src="imagenes/Imagen de 2024-12-13 a las 13.28.45_eb03178c.jpg" alt="Agotamientos de Napas de Agua">
+              <p>Realizamos agotamientos de aguas subterráneas con punteras y pozos, mientras se construyen o instalan ductos en sectores con napas de agua.</p>
+            </div>
+          </div>
         </article>
-
-        <article>
+      
+        <article class="publication-card">
+          <div class="card-content">
             <h2>Tunnel Liner</h2>
-            <img src="" alt="Tunnel Liner">
-            <p>Instalamos tunnel liners durante la construcción o instalación de ductos, garantizando la estabilidad estructural y la protección del túnel en todo momento.</p>
+            <div class="card-body">
+              <img src="imagenes/placeholder.jpg" alt="Tunnel Liner">
+              <p>Instalamos tunnel liners durante la construcción o instalación de ductos, garantizando la estabilidad estructural y la protección del túnel en todo momento.</p>
+            </div>
+          </div>
         </article>
-    </div>
+    </div>      
 
     <div class="container">
         <button class="btn" onclick="window.location.href='quote.html'">Cotizar</button>
@@ -118,5 +131,19 @@
             <p>© 2024 TunelHincado Riegomat. Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const navbar = document.querySelector("nav");
+        
+            window.addEventListener("scroll", () => {
+                if (window.scrollY > 0) {
+                    navbar.classList.add("scrolled");
+                } else {
+                    navbar.classList.remove("scrolled");
+                }
+            });
+        });
+    </script>
 </body>
 </html>

@@ -16,13 +16,13 @@
     <!-- Navegación Sticky -->
     <nav>
         <div class="logo-container">
-            <a href="index.html"><img src="imagenes/logo2.png" alt="Logo"></a>
+            <a href="index.html"><img src="imagenes/logo3.jpg" alt="Logo"></a>
         </div>
         <div>
             <a href="index.html">Inicio</a>
             <a href="Information.html">Nosotros</a>
             <a href="service.html">Servicios</a>
-            <a href="quote.html">Contacto</a>
+            <a><button class="quote-btn" onclick="window.location.href='quote.html'">Contactanos</button></a>
         </div>
     </nav>
 
@@ -50,6 +50,7 @@
         </div>
     </div>
 
+    <h1 style="text-align: center;">¿Cuales son nuestras máquinas?</h1>
     <div class="alternating-section">
         <div class="image-container">
             <img src="imagenes/maquinaria1.jpg" alt="Maquinaria innovadora">
@@ -96,69 +97,6 @@
             <p style="text-align: center; margin: 20px;" >
                 Estas colaboraciones son un testimonio de nuestra capacidad para cumplir 
                 con los más altos estándares de calidad y eficiencia en cada trabajo realizado.
-            </p>
-        </div>
-    </div>
-
-    <div class="alternating-section">
-        <div class="image-container">
-            <img src="imagenes/maquinaria1.jpg" alt="Maquinaria innovadora">
-        </div>
-        <div class="info-box">
-            <h1>Calidad garantizada</h1>
-            <p>
-                La satisfacción del cliente es nuestra prioridad. Implementamos rigurosos
-                sistemas de control de calidad en cada etapa de nuestros servicios, 
-                asegurando que cada solución sea eficiente, segura y sostenible.
-            </p>
-        </div>
-    </div>
-
-    <div class="alternating-section">
-        <div class="image-container">
-            <img src="imagenes/maquinaria1.jpg" alt="Maquinaria innovadora">
-        </div>
-        <div class="info-box">
-            <h1>Confianza y profesionalismo</h1>
-            <p>
-                Nos enorgullece construir relaciones de largo plazo con nuestros clientes. 
-                La transparencia, el cumplimiento de compromisos y el soporte constante nos convierten
-                 en un aliado confiable en cada proyecto.
-            </p>
-        </div>
-    </div>
-
-    <div class="alternating-section">
-        <div class="image-container">
-            <img src="imagenes/maquinaria1.jpg" alt="Maquinaria innovadora">
-        </div>
-        <div class="info-box">
-            <h1>Calidad garantizada y confianza</h1>
-            <p>
-                Trabajamos con un enfoque riguroso en el control de calidad y la transparencia, 
-                lo que nos permite generar confianza y construir relaciones de largo plazo con 
-                nuestros clientes. Nos comprometemos a superar sus expectativas, 
-                asegurando resultados excepcionales en cada etapa del proyecto.
-            </p>
-        </div>
-    </div>
-
-    <div class="alternating-section">
-        <div class="image-container">
-            <img src="imagenes/maquinaria1.jpg" alt="Maquinaria innovadora">
-        </div>
-        <div class="info-box">
-            <h1>Flexibilidad y adaptabilidad</h1>
-            <p>
-                Sabemos que cada obra presenta retos únicos. Por eso, 
-                diseñamos estrategias a medida que se ajustan a las características 
-                específicas del entorno, optimizando recursos y minimizando impactos ambientales.
-            </p>
-            <p>
-                Ya sea en proyectos de gran escala o en intervenciones más acotadas, 
-                nuestra experiencia y dedicación nos permiten superar las expectativas de 
-                nuestros clientes, contribuyendo al desarrollo de infraestructura sostenible y 
-                de alta calidad.
             </p>
         </div>
     </div>
@@ -212,6 +150,20 @@
         <div style="text-align: center;">
             <p>© 2024 TunelHincado Riegomat. Todos los derechos reservados.</p>
         </div>
-    </footer>        
+    </footer>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const navbar = document.querySelector("nav");
+        
+            window.addEventListener("scroll", () => {
+                if (window.scrollY > 0) {
+                    navbar.classList.add("scrolled");
+                } else {
+                    navbar.classList.remove("scrolled");
+                }
+            });
+        });
+    </script>
 </body>
 </html>
