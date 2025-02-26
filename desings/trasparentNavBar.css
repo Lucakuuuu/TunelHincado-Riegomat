@@ -1,0 +1,72 @@
+    /* Barra de navegación */
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: transparent;
+        padding: 10px 30px;
+        transition: background-color 0.3s ease;
+    }
+
+    /* Estado al desplazarse */
+    nav.scrolled {
+        background-color: white;
+        box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    nav.scrolled a {
+        color: black;
+    }
+
+    /* tamaño del logo */
+    nav .logo-container img {
+        height: 100px;
+        width: auto;
+    }
+
+    /* diseño de las opciones del navegador */
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 20px;
+        font-weight: bold;
+        font-size: 18px;
+        transition: color 0.3s ease-in-out;
+    }
+
+    /* animación del navegador */
+    nav a:hover {
+        color: #ffc107;
+    }
+
+    .quote-btn {
+        background-color: transparent;
+        color: white;
+        border: 2px solid white;
+        padding: 12px 24px;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 10px;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .quote-btn:hover {
+        background-color: red;
+        color: white;
+    }
+      
+    .quote-btn.active {
+        background-color: red;
+        color: white;
+    }
+
+    nav.scrolled .quote-btn { 
+        color: black; 
+        border-color: black; 
+    }

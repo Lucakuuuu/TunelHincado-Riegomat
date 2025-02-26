@@ -1,7 +1,7 @@
 /* Estilo general del pie de página */
 footer {
-    background-color: #333;
-    color: #aaa;
+    background-color: #2C3E50;
+    color: white;
     padding: 20px;
     font-size: 16px;
 }
@@ -18,7 +18,7 @@ footer {
 .footer-logo {
     display: block;
     margin: 45px auto 20px;
-    width: 400px;
+    width: 300px;
     height: auto;
 }
 
@@ -52,7 +52,7 @@ footer {
 /* diseño del link en las listas */
 .footer-section ul li a {
     text-decoration: none;
-    color: #aaa;
+    color: white;
 }
 
 /* animación del link en las listas */
@@ -78,17 +78,17 @@ footer {
     margin: 0;
     font-size: 14px;
     line-height: 1.4;
-    color: #aaa;
+    color: white;
 }
 
 .contact-info a {
     text-decoration: none;
-    color: #aaa;
+    color: white;
 }
 
 .contact-info a:hover {
     text-decoration: underline;
-    color: #fff;
+    color: #aaa;
 }
 
 /* Diseño y tamaño de la imagen de contactos */
@@ -101,5 +101,5 @@ footer {
 footer div[style="text-align: center;"] {
     margin-top: 20px;
     font-size: 13px;
-    color: #aaa;
+    color: white;
 }

@@ -5,17 +5,17 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white;
     clip-path: ellipse(100% 100% at 50% 0%);
     overflow: hidden;
     height: 100vh;
+    padding: 0 10%; /* Añadir padding para mantener el margen */
 }
 
 .hero video {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100%; /* Aumentar el ancho del video */
     height: 100%;
     object-fit: cover;
     z-index: -1;

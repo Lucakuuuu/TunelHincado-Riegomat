@@ -6,16 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>TunelHincado Riegomat Cotización</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="desings/web.css">
+    
     <link rel="stylesheet" href="desings/quote.css">
     <link rel="stylesheet" href="desings/footer.css">
-    <link rel="stylesheet" href="desings/navBar.css">
+    <link rel="stylesheet" href="desings/trasparentNavBar.css">
 </head>
 <body>
     <!-- Navegación Sticky -->
     <nav>
         <div class="logo-container">
-            <a href="index.html"><img src="imagenes/logo3.jpg" alt="Logo"></a>
+            <a href="index.html"><img src="imagenes/icono1.jpg" alt="Logo"></a>
         </div>
         <div>
             <a href="index.html">Inicio</a>
@@ -81,7 +81,7 @@
         <div class="footer-container">
             <!-- Información -->
             <div class="footer-section">
-                <img src="imagenes/logo2.png" alt="Logo" class="footer-logo">
+                <img src="imagenes/icono1.jpg" alt="Logo" class="footer-logo">
                 <p class="centerText">
                     Si deseas más información, asesoría o cotizar alguno de nuestros servicios, 
                     puedes contactarnos a través de los siguientes medios:
@@ -166,5 +166,12 @@
             });
         });
     </script>
+
+    <script>
+        window.addEventListener('scroll', function() {
+        document.body.style.backgroundPositionY = (window.scrollY * 0.5) + 'px';
+        });
+    </script>
+  
 </body>
 </html>

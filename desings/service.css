@@ -1,59 +1,100 @@
-/* Contenedor general de las tarjetas */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Diseño del subtitulo del body */
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  color: #005682;
+  margin-bottom: 0.5px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #005682;
+  margin-bottom: 0.5px;
+}
+
+.container {
+  text-align: center;
+}
+
+.btn {
+  background-color: #016ea5;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-bottom: 45px; 
+}
+
+.btn:hover {
+  background-color: #003955;
+  transform: scale(1.05);
+}
+
 .publication-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;           /* Espacio entre tarjetas */
-    padding: 20px;       /* Espacio interno del contenedor */
-  }
-  
-  /* Estilos de la tarjeta */
-  .publication-card {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  /* Efecto hover en la tarjeta */
-  .publication-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Contenido interno de la tarjeta */
-  .card-content {
-    padding: 15px;
-  }
-  
-  /* Título del servicio */
-  .card-content h2 {
-    margin-bottom: 30px;
-    font-size: 1.5rem;
-    color: #005682;
-  }
-  
-  /* Cuerpo de la tarjeta: imagen y descripción en fila */
-  .card-body {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    align-items: center;
-  }
-  
-  /* Imagen a la izquierda */
-  .card-body img {
-    width: 30%;
-    object-fit: cover;
-    border-radius: 4px;
-  }
-  
-  /* Descripción a la derecha */
-  .card-body p {
-    /*flex: 1;*/
-    font-size: 1rem;
-    color: #333;
-    line-height: 1.5;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  gap: 20px;           /* Espacio entre tarjetas */
+  padding: 20px;       /* Espacio interno del contenedor */
+}
+
+/* Tarjeta individual */
+.publication-card {
+  display: flex;
+  align-items: center;  /* Alinea verticalmente la imagen y el bloque de texto */
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 10px;
+}
+
+.publication-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagen a la izquierda */
+.publication-card img {
+  width: 30%;            /* Ajusta el ancho según prefieras */
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-right: 20px;     /* Espacio entre la imagen y el contenido */
+}
+
+/* Contenedor del texto (título y descripción) */
+.card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* Centra verticalmente el contenido */
+}
+
+/* Título: se alinea en medio junto con la descripción */
+.card-content h2 {
+  margin: 0 0 10px 0;
+  font-size: 1.4rem;
+  color: #005682;
+}
+
+/* Descripción del servicio */
+.card-content p {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+}
