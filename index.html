@@ -170,60 +170,73 @@
             });
         });
     </script>
-
     <script>
+            document.addEventListener('DOMContentLoaded', function() {
+            const quoteBtn = document.querySelector('.quote-btn');
+            
+            quoteBtn.addEventListener('click', function() {
+                quoteBtn.classList.add('active');
+            });
+            });
+        </script>
+        <script>
         document.addEventListener('DOMContentLoaded', function() {
-        const quoteBtn = document.querySelector('.quote-btn');
+            // Imágenes para cada slider
+            const imagesSlider1 = [
+                "../imagenes/Servicios/Tuneleras/Perforación Horizontal/1.jpeg",
+                "../imagenes/Servicios/Tuneleras/Perforación Horizontal/2.jpg",
+                "../imagenes/Servicios/Tuneleras/Perforación Horizontal/3.jpg",
+            ];
         
-        quoteBtn.addEventListener('click', function() {
-            quoteBtn.classList.add('active');
+            const imagesSlider2 = [
+                "../imagenes/Servicios/Tuneleras/Hincado de Tuberías/1.png",
+                "../imagenes/Servicios/Tuneleras/Hincado de Tuberías/2.jpeg",
+                "../imagenes/Servicios/Tuneleras/Hincado de Tuberías/3.jpg",
+            ];
+        
+            let currentIndex1 = 0;
+            let currentIndex2 = 0;
+        
+            const slider1 = document.getElementById('slider-1');
+            const slider2 = document.getElementById('slider-2');
+        
+            // Agrega la clase para la transición (asegúrate de tener definida la clase .fade en tu CSS)
+            slider1.classList.add('fade');
+            slider2.classList.add('fade');
+        
+            // Duración de la transición (en milisegundos)
+            const fadeDuration = 1000;
+        
+            // Función para cambiar la imagen del primer slider
+            function changeImageSlider1() {
+                slider1.style.opacity = 0;
+                setTimeout(() => {
+                    currentIndex1 = (currentIndex1 + 1) % imagesSlider1.length;
+                    slider1.src = imagesSlider1[currentIndex1];
+                    // Al cargar la nueva imagen, se restablece la opacidad
+                    slider1.onload = () => {
+                        slider1.style.opacity = 1;
+                    };
+                }, fadeDuration);
+            }
+        
+            // Función para cambiar la imagen del segundo slider
+            function changeImageSlider2() {
+                slider2.style.opacity = 0;
+                setTimeout(() => {
+                    currentIndex2 = (currentIndex2 + 1) % imagesSlider2.length;
+                    slider2.src = imagesSlider2[currentIndex2];
+                    slider2.onload = () => {
+                        slider2.style.opacity = 1;
+                    };
+                }, fadeDuration);
+            }
+        
+            // Configura intervalos diferentes para cada slider
+            // Por ejemplo, el slider 1 cambiará cada 5 segundos y el slider 2 cada 7 segundos.
+            setInterval(changeImageSlider1, 5000);
+            setInterval(changeImageSlider2, 7000);
         });
-        });
-    </script>
-    <script>
-        const imagesSlider1 = [
-        "../imagenes/Servicios/Tuneleras/Perforación Horizontal/1.jpeg",
-        "../imagenes/Servicios/Tuneleras/Perforación Horizontal/3.jpg",
-        "../imagenes/Servicios/Tuneleras/Perforación Horizontal/5.jpg",
-        ];
-
-        const imagesSlider2 = [
-        "../imagenes/Servicios/Tuneleras/Hincado de Tuberías/1.png",
-        "../imagenes/Servicios/Tuneleras/Hincado de Tuberías/2.jpg",
-        "../imagenes/Servicios/Tuneleras/Hincado de Tuberías/3.jpeg",
-        "../imagenes/Servicios/Tuneleras/Hincado de Tuberías/4.jpeg",
-        ];
-
-        let currentIndex1 = 0;
-        let currentIndex2 = 0;
-
-        const slider1 = document.getElementById('slider-1');
-        const slider2 = document.getElementById('slider-2');
-
-        slider1.classList.add('fade');
-        slider2.classList.add('fade');
-
-        function changeImage() {
-        slider1.style.opacity = 0;
-        slider2.style.opacity = 0;
-
-        setTimeout(() => {
-            currentIndex1 = (currentIndex1 + 1) % imagesSlider1.length;
-            slider1.src = imagesSlider1[currentIndex1];
-
-            currentIndex2 = (currentIndex2 + 1) % imagesSlider2.length;
-            slider2.src = imagesSlider2[currentIndex2];
-
-            slider1.onload = () => {
-            slider1.style.opacity = 1;
-            };
-
-            slider2.onload = () => {
-            slider2.style.opacity = 1;
-            };
-            }, 1000);
-        }
-        setInterval(changeImage, 5000);
-    </script>
+    </script>    
 </body>
 </html>
