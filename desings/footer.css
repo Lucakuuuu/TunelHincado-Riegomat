@@ -18,8 +18,8 @@ footer {
 .footer-logo {
     display: block;
     margin: 45px auto 20px;
-    width: 300px;
-    height: auto;
+    height: 130px;
+    width: auto;
 }
 
 /* diseño de cada sección (Indicaciones, contactos y enlaces) */

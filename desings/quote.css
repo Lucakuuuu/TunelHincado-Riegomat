@@ -122,9 +122,8 @@ textarea {
     color: #333;
 }
 */
-
 body {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-              url("../imagenes/Imagen\ de\ WhatsApp\ 2024-12-12\ a\ las\ 11.00.41_c4dd5bc2.jpg") no-repeat center top;
+              url("../imagenes/Servicios/Tuneleras/Perforación%20Horizontal/1.jpeg") no-repeat center top;
   background-size: cover;
 }
