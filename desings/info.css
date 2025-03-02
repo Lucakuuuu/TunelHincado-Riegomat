@@ -38,7 +38,12 @@
     text-align: center;
 }
 
-.companies-container {
+.ranked-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.values-container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -48,67 +53,22 @@
     margin: 20px;
 }
 
-.companies-item {
+.value-item {
     text-align: center;
     max-width: 200px;
 }
 
-.companies-item img {
+.value-item img {
     width: 150px;
     height: 150px;
 }
 
-.companies-item h3 {
+.value-item h3 {
     color: #005682;
     font-size: 1.2rem;
 }
 
-.companies-item p {
+.value-item p {
     font-size: 0.9rem;
     color: #333;
-}
-
-/* Contenedor para las secciones alternadas */
-.alternating-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    padding: 40px 20px;
-    background-color: #f4f4f4; /* Color de fondo general */
-    margin-bottom: 20px;
-}
-
-.alternating-section:nth-child(even) {
-    flex-direction: row-reverse; /* Invertir el orden para secciones pares */
-}
-
-/* Estilo para la información (cuadrado oscuro) */
-.alternating-section .info-box {
-    flex: 1;
-    background-color: #333; /* Color oscuro */
-    color: #ffffff; /* Texto claro */
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-.alternating-section .info-box h1 {
-    color: #ffffff;
-}
-
-/* Estilo para las imágenes */
-.alternating-section .image-container {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.alternating-section .image-container img {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
